@@ -10,10 +10,10 @@ export default {
 </script>
 
 <template lang="">
-  <div>
     <HeaderProject/>
-    <Projects/>
-  </div>
+    <main>
+      <Projects/>
+    </main>
 </template>
 
 <style lang="scss">

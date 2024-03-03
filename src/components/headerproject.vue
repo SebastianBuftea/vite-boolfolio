@@ -9,7 +9,7 @@ export default {
      <header class="color_header">
         <div class="container p-3 ">
             <div class="row d-flex  align-items-center">
-               <img src="/public/logo.png" alt="" class="size_">
+               <img src="../assets/logo.png" alt="" class="size_">
             </div>  
          </div>
     </header>
