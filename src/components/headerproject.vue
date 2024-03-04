@@ -18,13 +18,13 @@ export default {
                <img src="../assets/logo.png" alt="" class="size_">
                 <ul class="list-unstyled list-inline w-25 m-0 d-flex justify-content-end ">
                     <li v-for="item, index in store.menuItems" :key="index" class="list-inline-item align-self-center">
-                        <i class="fa-solid fa-magnifying-glass m-1 fa-lg"></i><strong><router-link :to="{name: item.name}"
+                       <strong><router-link :to="{name: item.name}"
                          class="link-offset-2 link-underline link-underline-opacity-0  mx-2 change-color">
                             {{item.label}}
                         </router-link></strong>
                     </li>
                 </ul>
-                <i class="fa-solid fa-magnifying-glass"></i>
+
             </div>  
          </div>
     </header>

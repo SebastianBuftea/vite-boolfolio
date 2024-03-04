@@ -19,7 +19,7 @@ export default {
 
 <template lang="">
 <div class="col-4 d-flex justify-content-center my-2">
-    <div class="card d-flex  w-75">
+    <div class="card d-flex  w-75 bg-warning p-2 border border-warning-subtle">
         <img :src=" project.mockup_image == null ? 'https://www.educattepeople.it/wp-content/uploads/2019/07/projectmanagementEDUCatt.jpg':`${store.baseUrl}/storage/${project.mockup_image}`" alt="" 
         class="card-img-top size_ align-self-center">
         <div class="my-2">
