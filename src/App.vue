@@ -1,9 +1,9 @@
 
 <script> import HeaderProject from './components/headerproject.vue'; 
-import Projects from "./components/projects.vue";
+
 export default {
   components:{
-    Projects,
+
     HeaderProject 
   }
 }
@@ -12,7 +12,7 @@ export default {
 <template lang="">
     <HeaderProject/>
     <main>
-      <Projects/>
+      <router-view></router-view>
     </main>
 </template>
 

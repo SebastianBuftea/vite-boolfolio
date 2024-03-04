@@ -1,12 +1,12 @@
 
 <script>
 
-import SingleProject from "./SingleProject.vue";
+import SingleProject from "../components/SingleProject.vue";
 import { store } from '../store.js';
 import axios from 'axios'; 
 
 export default {
-    name:'Projects',
+    name:'AppProjects',
     components:{
         SingleProject
     },
@@ -65,4 +65,4 @@ export default {
 <style lang="scss">
 @use '../style/general.scss' as*;
 @use '../style/partials/variables' as*;   
-</style>
+</style>./projects.vue/index.js
