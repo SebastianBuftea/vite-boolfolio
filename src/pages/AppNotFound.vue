@@ -1,11 +1,11 @@
 <script>
 export default {
-    name:'Home'
+    name:'NotFound'
 }
 </script>
 <template lang="">
     <div>
-       
+     
     </div>
 </template>
 

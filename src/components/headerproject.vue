@@ -14,13 +14,17 @@ export default {
 <template lang="">
      <header class="color_header">
         <div class="container p-3 ">
-            <div class="row d-flex  justify-content-between">
+            <div class="row d-flex justify-content-between">
                <img src="../assets/logo.png" alt="" class="size_">
-                <ul class="list-unstyled d-flex align-items-center text-dark w-25 align-self-middle">
-                    <li v-for="item, index in store.menuItems" :key="index" >
-                        <router-link :to="{name: item.name}">{{item.label}}</router-link>
+                <ul class="list-unstyled list-inline w-25 m-0 d-flex justify-content-end ">
+                    <li v-for="item, index in store.menuItems" :key="index" class="list-inline-item align-self-center">
+                        <i class="fa-solid fa-magnifying-glass m-1 fa-lg"></i><strong><router-link :to="{name: item.name}"
+                         class="link-offset-2 link-underline link-underline-opacity-0  mx-2 change-color">
+                            {{item.label}}
+                        </router-link></strong>
                     </li>
                 </ul>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>  
          </div>
     </header>
@@ -32,12 +36,15 @@ export default {
 
 .color_header{
     background-color: rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
     .size_{
         width: 200px;   
     }
-    ul{
+    .change-color{
         color: black;
+        
+        &:hover{
+            color: rgb(255, 149, 0);
+        }
     }
 }
 
