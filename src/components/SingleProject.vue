@@ -20,8 +20,8 @@ export default {
 <template lang="">
 
     <div class="col-4 d-flex justify-content-center my-2">
-        <router-link :to="{name: 'project', params:{slug: project.slug }}" class="w-auto">
-            <div class="card d-flex w-75 h-100  bg-warning p-2 border border-warning-subtle">
+        <router-link :to="{name: 'project', params:{slug: project.slug }}" class="w-auto link-offset-2 link-underline link-underline-opacity-0  mx-2">
+            <div class="card d-flex w_card h-100  p-2 border border-warning-subtle">
                 <img :src=" project.mockup_image == null ? 'https://www.educattepeople.it/wp-content/uploads/2019/07/projectmanagementEDUCatt.jpg':`${store.baseUrl}/storage/${project.mockup_image}`" alt="" 
                 class="card-img-top size_ align-self-center">
                 <div class="my-2">
@@ -47,8 +47,17 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.size_{
-    width:200px;
+.w_card{
+width: 300px;
+background-color: rgb(248, 235, 150);
+
+&:hover{
+    background-color: rgb(255, 187, 0);
 }
+.size_{
+        width:200px;
+    }
+}
+    
     
 </style>

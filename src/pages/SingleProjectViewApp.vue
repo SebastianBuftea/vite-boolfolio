@@ -47,6 +47,10 @@ export default {
                                 </li> 
                             </ul>
                         </div>
+                        <div v-if=" project.type!= null ">
+                        <strong>Type</strong> 
+                            <p>{{project.type.name}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
