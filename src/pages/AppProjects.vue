@@ -41,7 +41,6 @@ export default {
     <div class="container my-3">
         <div class="row bg-white mb-2 rounded border border-warning">
             <div class="col-12 d-flex flex-wrap mb-3">
-            
                 <SingleProject v-for="project, index in projects" :key="index" :project="project"/>
             </div>
          </div>
