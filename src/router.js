@@ -3,6 +3,7 @@ import AppHome from './pages/AppHome.vue';
 import AppProjects from './pages/AppProjects.vue';
 import AppNotFound from './pages/AppNotFound.vue';
 import SingleProjectViewApp from './pages/SingleProjectViewApp.vue';
+import AppContactUs from './pages/AppContactUs.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -21,6 +22,11 @@ const router = createRouter({
             path: '/project/:slug',
             name: 'project',
             component: SingleProjectViewApp
+        },
+        {
+            path: '/contacts',
+            name: 'contacts',
+            component: AppContactUs
         },
         {
             path: '/:catchAll(.*)',
